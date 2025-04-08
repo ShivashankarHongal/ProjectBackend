@@ -9,13 +9,12 @@ const jwt = require('jsonwebtoken');
 const {Product} = require('./Model/Product');
 const {Cart}= require('./Model/Cart');
 
-
 //middleware
 app.use(cors());
 app.use(morgan('dev'))
 app.use(express.json());
 
-mongoose.connect('mongodb://127.0.0.1:27017/shivashankar')
+mongoose.connect('mongodb+srv://atlas-sample-dataset-load-67f4c05f48416b1793dd6d48:9nnnhNbsXYZhIHE4@cluster0.pewgz2q.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 .then(()=>{
     console.log("db is connected")
 }).catch((error)=>{
