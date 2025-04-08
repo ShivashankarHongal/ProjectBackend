@@ -15,6 +15,7 @@ app.use(morgan('dev'))
 app.use(express.json());
 
 
+
 mongoose.connect('mongodb+srv://shivashankarhongal2004:9nnnhNbsXYZhIHE4@cluster0.pewgz2q.mongodb.net/?retryWrites=true&w=majority')
 .then(()=>{
     console.log("db is connected")
